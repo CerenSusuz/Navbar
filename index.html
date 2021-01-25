@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navbar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: aquamarine;
+            list-style: none;
+        }
+        
+        .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: cadetblue;
+        }
+        
+        .navigation a:hover {
+            background-color: antiquewhite
+        }
+        
+        @media all and (max-width: 800px) {
+            .navigation {
+                justify-content: space-around;
+            }
+        }
+        
+        @media all and (max-width: 600px) {
+            .navigation {
+                flex-direction: column;
+            }
+            .navigation a {
+                text-align: center;
+                padding: 8px;
+                border-top: 1px solid goldenrod;
+                border-bottom: 1px solid bisque;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+
+</body>
+
+</html>
